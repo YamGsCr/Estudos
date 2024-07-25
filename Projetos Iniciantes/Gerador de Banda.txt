@@ -1,4 +1,0 @@
-print("Bem vindo ao gerador de nome de bandas!")
-cidade = input("Digite o nome da sua cidade: \n")
-pet = input("Digite o nome de seu pet: \n")
-print("O nome da sua banda é: " + cidade + " " + pet) 

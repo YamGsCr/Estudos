@@ -1,7 +1,0 @@
-print("Bem vindo a calculadora de contas/gorjetas!")
-conta = int(input("Digite a conta: $ \n"))
-gorjeta = int(input("Digite a porcentagem de gorjeta: 10, 15, 20\n"))
-pessoas = int(input("Quantas pessoas vão dividir a conta? "))
-conta_gorjeta = gorjeta/100 * conta + conta
-total_conta = conta_gorjeta/pessoas
-print(f"O total da conta deu: {total_conta:.2f}")
