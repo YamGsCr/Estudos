@@ -1,0 +1,29 @@
+Dia 1 e 2 - String e Tipos de Data:
+
+-String-
+
+ Basicamente, as strings são dados, cada caractere se assemelha com um dado. As aspas "cortam" e limitam esses dados, dando o output desejado.
+Pense que os underlines são "pedaços": ___hello world___, como queremos apenas demonstrar o "hello world", iremos limitar essa string com as aspas:
+___"hello world"___, assim, os outros trechos são inibidos do output.
+ Seguindo isso, juntar duas strings com um espaço entre elas tem a mesma teoria. Como estamos trabalhando com trechos, é necessário aplicar um
+"dado vazio" entre elas para simular o espaço:
+ "print("hello" + "world")" - vai resultar em "helloworld"
+ "print("hello" + " " + "world")" - vai resultar em "hello world"
+ Claro que podemos colocar um espaço antes do "world" ou no final do "hello", resultando no "hello world". No fim, ainda trabalhamos com "trechos
+de dados" da string.
+
+-Tipos de dados e f-strings-
+
+ Os tipos de dados que trabalhamos são: int, float, boolean (e a string). Resumindo cada um:
+- Int: São números inteiros, como o 1, 15, 10.
+- Float: São números com ponto flutuante, sendo um exemplo deles: 3,3335.
+- Boolean: É o True e o False.
+ Trabalhar com diferentes tipos de dados exige cuidado e atenção, por exemplo, não podemos concatenar um int com uma string. Para concatenar, ambas
+precisamos transformar uma delas no outro tipo de dado.
+ "print("5" + 5) - Vai dar erro
+ "print(int("5")+5) - Vai resultar no 10
+ 
+ As f-string, ou strings formatadas é uma forma de printar. Um exemplo grosseiro disso, "gostaria de colocar uma equação em um print, porém, não vejo necessidade
+de criar uma variavel para isso".
+ "print(f"O resultado: {5/2:.2f}") - Podemos usar a f-string para isso, o .2f é uma forma de arredondamento/limitação dos números após a vírgula.
+ 
