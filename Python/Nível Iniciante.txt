@@ -26,4 +26,20 @@ precisamos transformar uma delas no outro tipo de dado.
  As f-string, ou strings formatadas é uma forma de printar. Um exemplo grosseiro disso, "gostaria de colocar uma equação em um print, porém, não vejo necessidade
 de criar uma variavel para isso".
  "print(f"O resultado: {5/2:.2f}") - Podemos usar a f-string para isso, o .2f é uma forma de arredondamento/limitação dos números após a vírgula.
+
+Dia 3 - If e Else:
+
+ São formas de colocar uma condição no código. "Se ele for maior de 18, pagar uma taxa. Se não, é isento". Existe também os Nested If, que são If, dentro de If.
+São bons metódos para adicionar caminhos dentro de uma condição:
+
+idade = 18
+if idade >= 18:
+	if tamanho > 150:
+		print("Pode seguir")
+	if tamanho < 150:
+		print("Não pode seguir")
+else:
+	print("Menores de 18 não podem seguir")
+ 
+ É um exemplo bem bobo, porém, ele demonstra de forma simples o If e Else entrando em ação. Existe o elif também, que seria um "segundo if".
  

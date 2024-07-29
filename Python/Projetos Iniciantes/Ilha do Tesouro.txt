@@ -1,0 +1,20 @@
+print("Bem vindo a Ilha do Tesouro! Ao final desta ilha, existe um tesouro. Porém, apenas os mais fortes sobrevivem. Boa sorte!")
+caminho = input("Você se encontra em uma encruzilhada, em qual caminho irá seguir? \'direita\' ou \'esquerda\'.")
+caminho = caminho.lower()
+if caminho == "esquerda":
+    lago = input("Você segue pela esquerda. Ao caminhar por 20 minutos, você se vê em frente a um lago. \'nadar\' ou \'esperar\'.")
+    lago = lago.lower()
+    if lago == "esperar":
+	    portas = input('''Com medo das bestas marinhas escondidas no lago, você se senta e espera. De repente um estrondo vindo do lago é escutado, um caminho de pedras é erguido
+        a sua frente, três portas, qual escolher? \'vermelha\', \'amarela\', \'azul\'.''')
+	    portas = portas.lower()
+	    if portas == "vermelha":
+		    print("Você entra pela porta vermelha. Um calor insuportável é lançado em seu corpo. Você morreu queimado.")
+	    elif portas == "azul":
+		    print("Você entra na porta azul. Um caminho é erguido, em seu primeiro passo, tudo desmorona. Você cai no lago e é devorado.")
+	    else:
+    		print("Você entra pela porta amarela. Você está dentro de uma sala escura. Tochas são acesas, em sua frente se encontra um enorme tesouro. Você venceu!")
+    else:
+	    print("Ao pular no lago, uma sombra enorme começa a se aproximar, você é engolido pela besta marinha que reside o lago. Você morreu.")
+else:
+    print("Você segue pela direita. Um tigre enorme estava se espreitando, ele te embosca. Você foi morto pelo tigre.")
