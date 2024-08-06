@@ -42,4 +42,34 @@ else:
 	print("Menores de 18 não podem seguir")
  
  É um exemplo bem bobo, porém, ele demonstra de forma simples o If e Else entrando em ação. Existe o elif também, que seria um "segundo if".
+
+Dia 4 - Lists:
+
+	Listas são estruturas de dados que contem int, string, etc. São criadas por meio de []
+
+Dia 5 - Loops:
+	É chamado por meio do "For", os loops funcionam de diferentes formas, porém, tem o mesmo intuito
+que é rodar em algo (seja lista, dataset, números, entre outros) e acionar algo.
+	A estrutura do for segue dessa forma:
+	
+	for (nome) in (list, range, etc):
+		seu código
+	
+	No for range, você coloca um start e um stop, ou seja, um início e um fim. Você também pode adicionar um "step",
+que seria a quantidade de passos a cada "ativação".
+	Exemplo: Temos um "for algarismos in range(1,10,2)", ele vai dar print dos algarismos.
+	Por conta do step ser 2, vai ser printado o 2,4,6,8.
+
+Dia 6 e 7 - Funções:
+	Você pode criar uma função no python usando o "def", a qual, pode requisitar parâmetros ou não. Um exemplo:
+	def divisorPar(n):
+		divisores = []
+		for i in range(1,n+1):
+			if n%i == 0:
+				if i%2 == 0:
+					divisores.append(i)
+		return divisores
+	A função divisorPar irá receber um N(número) qualquer como parâmetro e retornar uma lista com seus divisores pares.
+
+
  

@@ -1,0 +1,51 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+import random
+i = 0
+while i < 1:
+    set_game = [rock, paper, scissors]
+    cpu_choice = random.randint(0,2)
+    cpu_process = set_game[cpu_choice]
+    p_choice = int(input("Rock(0), paper(1) or scissors?(2)" ))
+    p_process = set_game[p_choice]
+    if p_choice > 2 or p_choice < 0:
+        print("Error")
+    else:
+        print(f"The computer chose: {cpu_process}")
+        print(f"\nYou chose: {p_process}")
+        if cpu_choice == p_choice:
+            print("Draw")
+        if cpu_choice == 0 and p_choice == 2:
+            print("You lose!")
+        if p_choice == 0 and cpu_choice == 2:
+            print("You win!")
+        elif cpu_choice < p_choice:
+            print("You win!")
+        else:
+            print("You lose!")
+        print("\n")
